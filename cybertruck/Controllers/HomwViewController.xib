@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomwViewController" customModule="cybertruck" customModuleProvider="target">
+            <connections>
+                <outlet property="button" destination="aNi-ZY-L5i" id="s7h-Ue-Qqs"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="78R-fh-HVg">
+                    <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Screen Shot 2021-03-16 at 17.20.57" translatesAutoresizingMaskIntoConstraints="NO" id="ywI-f9-6hK">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="100"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="100" id="tUy-Sp-v8b"/>
+                            </constraints>
+                        </imageView>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Screen Shot 2021-03-16 at 15.12.38" translatesAutoresizingMaskIntoConstraints="NO" id="7bq-st-wd2">
+                            <rect key="frame" x="0.0" y="100" width="414" height="568"/>
+                        </imageView>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Screen Shot 2021-03-16 at 17.29.27" translatesAutoresizingMaskIntoConstraints="NO" id="ZtJ-1t-RnY">
+                            <rect key="frame" x="0.0" y="668" width="414" height="150"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="150" id="fE3-Yg-nS0"/>
+                            </constraints>
+                        </imageView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aNi-ZY-L5i">
+                            <rect key="frame" x="157" y="693" width="100" height="100"/>
+                            <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="100" id="rG8-kY-iHh"/>
+                                <constraint firstAttribute="height" constant="100" id="zhy-vJ-h0J"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                            <state key="normal" title="Press" image="person.badge.plus.fill" catalog="system">
+                                <color key="titleColor" red="0.053041902936152296" green="0.50395343840245033" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="pressButon:" destination="-1" eventType="touchUpInside" id="D3q-lN-RIf"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="ZtJ-1t-RnY" secondAttribute="trailing" id="3KT-nU-ev0"/>
+                        <constraint firstAttribute="bottom" secondItem="ZtJ-1t-RnY" secondAttribute="bottom" id="B7j-nq-svT"/>
+                        <constraint firstItem="ywI-f9-6hK" firstAttribute="top" secondItem="78R-fh-HVg" secondAttribute="top" id="D0t-oJ-SJV"/>
+                        <constraint firstItem="7bq-st-wd2" firstAttribute="top" secondItem="ywI-f9-6hK" secondAttribute="bottom" id="IDX-dp-l2J"/>
+                        <constraint firstItem="ZtJ-1t-RnY" firstAttribute="top" secondItem="7bq-st-wd2" secondAttribute="bottom" id="PYE-su-QKA"/>
+                        <constraint firstAttribute="trailing" secondItem="ywI-f9-6hK" secondAttribute="trailing" id="UQk-CQ-YaD"/>
+                        <constraint firstAttribute="trailing" secondItem="7bq-st-wd2" secondAttribute="trailing" id="XkW-Hc-WxV"/>
+                        <constraint firstItem="aNi-ZY-L5i" firstAttribute="centerY" secondItem="ZtJ-1t-RnY" secondAttribute="centerY" id="kFf-35-5sV"/>
+                        <constraint firstItem="ZtJ-1t-RnY" firstAttribute="leading" secondItem="78R-fh-HVg" secondAttribute="leading" id="kba-7y-iGe"/>
+                        <constraint firstItem="7bq-st-wd2" firstAttribute="leading" secondItem="78R-fh-HVg" secondAttribute="leading" id="lDW-r4-3nJ"/>
+                        <constraint firstItem="ywI-f9-6hK" firstAttribute="leading" secondItem="78R-fh-HVg" secondAttribute="leading" id="pNd-gY-hcl"/>
+                        <constraint firstItem="aNi-ZY-L5i" firstAttribute="centerX" secondItem="ZtJ-1t-RnY" secondAttribute="centerX" id="zVg-u9-361"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="78R-fh-HVg" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="Cpn-Jq-vKy"/>
+                <constraint firstItem="78R-fh-HVg" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="Sq5-j5-f23"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="78R-fh-HVg" secondAttribute="bottom" id="dEH-vv-khK"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="78R-fh-HVg" secondAttribute="trailing" id="fXB-WT-lWB"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="137.68115942028987" y="128.57142857142856"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Screen Shot 2021-03-16 at 15.12.38" width="301" height="458"/>
+        <image name="Screen Shot 2021-03-16 at 17.20.57" width="309" height="62"/>
+        <image name="Screen Shot 2021-03-16 at 17.29.27" width="307" height="31"/>
+        <image name="person.badge.plus.fill" catalog="system" width="128" height="116"/>
+    </resources>
+</document>
